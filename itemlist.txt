@@ -1,0 +1,10 @@
+1,bottled water,1.50
+2,candy,1.00
+3,chocolate,2.50
+4,gum,1.00
+5,soda,2.50
+6,juice,3.00
+7,popcorn,2.50
+8,donut,1.50
+9,pretzel,2.00
+10,caramel,1.50
