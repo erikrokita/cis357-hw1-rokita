@@ -1,34 +1,37 @@
-/** */
+/** class that stores information about each grocery item */
 public class Item {
+
+    /** member data */
     private int itemCode;
     private String itemName;
-    private float unitPrice;
+    private double unitPrice;
 
-    public Item(int code, String name, float price){
+    /** constructor */
+    public Item(int code, String name, double price){
         itemCode = code;
         itemName = name;
         unitPrice = price;
     }
 
-    //setters
+    /** setters */
     public void SetItemCode(int code){
         itemCode = code;
     }
     public void SetItemName(String name){
         itemName = name;
     }
-    public void SetUnitPrice(float price){
+    public void SetUnitPrice(double price){
         unitPrice = price;
     }
 
-    //getters
+    /** getters */
     public int GetItemCode(){
         return itemCode;
     }
     public String GetItemName(){
         return itemName;
     }
-    public float GetUnitPrice(){
+    public double GetUnitPrice(){
         return unitPrice;
     }
 }

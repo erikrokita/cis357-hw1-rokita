@@ -1,11 +1,14 @@
-/** */
+/** class that stores information about a sale */
 public class Sales {
+
+    /** member data */
     private Item items[];
     //private int quantities[];
-    private float subtotal;
-    private float totalWithTax;
+    private double subtotal;
+    private double totalWithTax;
 
-    public Sales(float subtotal, float change, float tenderedNum, float totalWithTax){
+    /** constructor */
+    public Sales(double subtotal, double change, double tenderedNum, double totalWithTax){
         this.items = new Item[200];     //only allow up to 200 items
         //this.quantities = new int[200];
         this.subtotal = subtotal;
@@ -19,25 +22,26 @@ public class Sales {
         this.totalWithTax = 0;
     }
 
-    //setters
-    public void SetSubTotal(float subtotal){
+    /** setters */
+    public void SetSubTotal(double subtotal){
         this.subtotal = subtotal;
     }
-    public void SetTotalWithTax(float totalWithTax){
+    public void SetTotalWithTax(double totalWithTax){
         this.totalWithTax = totalWithTax;
     }
 
-    //getters
-    public float GetSubTotal(){
+    /** getters */
+    public double GetSubTotal(){
         return subtotal;
     }
-    public float GetTotalWithTax(){
+    public double GetTotalWithTax(){
         return totalWithTax;
     }
     public Item[] GetItemList(){
         return items;
     }
 
+    /** adds an item to its list. accepts the item and quantity */
     public void AddItem(Item item, int quantity){
         //continue searching through the internal items array until we find an empty slot
         int i = 0;
